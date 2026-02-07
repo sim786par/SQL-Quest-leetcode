@@ -1,3 +1,4 @@
+-- dense_rank() set the rank of the values without skipping the number if multiple same value is present.
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
   RETURN (
@@ -9,7 +10,5 @@ BEGIN
       )t
       where rnk = N
       limit 1
-      
-
   );
 END
