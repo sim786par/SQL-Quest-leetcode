@@ -1,13 +1,20 @@
 # Write your MySQL query statement below
--- correct code:
-select id 
-from(
-    select id,recordDate,temperature as temp,
-    lag(temperature ,1) over(order by recordDate) as prevtemp,
-    lag(recordDate,1) over(order by recordDate) as prevdate
-    from weather
-)t
-where datediff(recordDate, prevDate) = 1 and prevtemp < temp;
+-- correct codes :
+-- 1.using lag function:
+-- select id 
+-- from(
+--     select id,recordDate,temperature as temp,
+--     lag(temperature ,1) over(order by recordDate) as prevtemp,
+--     lag(recordDate,1) over(order by recordDate) as prevdate
+--     from weather
+-- )t
+-- where datediff(recordDate, prevDate) = 1 and prevtemp < temp;
+
+-- 2.using self join:
+select w1.id from weather w1
+join weather w2 ON Datediff(w1.recordDate, w2.recordDate) = 1
+where w1.temperature > w2.temperature;
+
 -- wrong code using lag:
 -- select id
 -- from(
