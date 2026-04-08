@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0584-find-customer-referee](https://github.com/sim786par/SQL-Quest-leetcode/tree/master/0584-find-customer-referee) |
 | [0586-customer-placing-the-largest-number-of-orders](https://github.com/sim786par/SQL-Quest-leetcode/tree/master/0586-customer-placing-the-largest-number-of-orders) |
 | [0596-classes-with-at-least-5-students](https://github.com/sim786par/SQL-Quest-leetcode/tree/master/0596-classes-with-at-least-5-students) |
+| [0607-sales-person](https://github.com/sim786par/SQL-Quest-leetcode/tree/master/0607-sales-person) |
 | [0610-triangle-judgement](https://github.com/sim786par/SQL-Quest-leetcode/tree/master/0610-triangle-judgement) |
 | [1141-user-activity-for-the-past-30-days-i](https://github.com/sim786par/SQL-Quest-leetcode/tree/master/1141-user-activity-for-the-past-30-days-i) |
 | [1193-monthly-transactions-i](https://github.com/sim786par/SQL-Quest-leetcode/tree/master/1193-monthly-transactions-i) |
