@@ -4,7 +4,7 @@ public:
         int n = nums.size();
         int limit = abs(n/3);
         vector<int> result;
-        map<int,int> mp;
+        unordered_map<int,int> mp;
         for(int i=0;i<n;i++){
             mp[nums[i]]++;
         }
